@@ -21,6 +21,11 @@ from app import views  # Import the views from your app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),  # Add this line to include the app's URL pattern
-    path('Home/', views.Home, name='Home'),  # Add this line to include the app's URL pattern
-
+   
+    path('about/', views.about, name='about'),  # Add this line to include the app's URL pattern
+    path('contact/', views.contact, name='contact'),  # Add this line to include the app's URL pattern
+    path('base/', views.base, name='base'),  # Add this line to include the app's URL pattern
+    path('registen/', views.registen, name='registen'),  # Add this line to include the app's URL pattern
+    path('registen_form/', views.registen_form, name='registen_form'),  # Add this line to include the app's URL pattern
+  
 ]
