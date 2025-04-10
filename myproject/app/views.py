@@ -19,7 +19,15 @@ def registen_form(request):
     print(request.POST)
     print(request.method)
     print(request.Files)
-
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    email = request.POST.get('email')
+    first_name = request.POST.get('first_name')
+    last_name = request.POST.get('last_name')
+    phone = request.POST.get('phone')
+    address = request.POST.get('address')
+    dob = request.POST.get('dob')
+    print(username,password,email,first_name,last_name,phone,address,dob)
 
 
 
