@@ -27,5 +27,6 @@ urlpatterns = [
     path('base/', views.base, name='base'),  # Add this line to include the app's URL pattern
     path('registen/', views.registen, name='registen'),  # Add this line to include the app's URL pattern
     path('registen_form/', views.registen_form, name='registen_form'),  # Add this line to include the app's URL pattern
+    path('login/', views.login, name='login'),  # Add this line to include the app's URL pattern
   
 ]
